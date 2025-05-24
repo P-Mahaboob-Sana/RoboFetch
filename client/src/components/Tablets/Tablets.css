@@ -1,0 +1,74 @@
+.box-background {
+    height: auto; /* Allow height to adjust based on content */
+    width: 85vw;
+    background-color: rgb(250, 247, 254);
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Centers the boxes horizontally */
+    gap: 80px; /* Adds space between boxes */
+    padding: 20px;
+}
+
+.main-box {
+    height: 350px;
+    width: 270px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+h4{
+    margin-right: 120px;
+    background-color: rgba(205, 255, 238, 0.833);
+    height: 18px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+h3{
+    font-size: 20px;
+}
+
+.image-background {
+    height: 180px;
+    width: 180px;
+    background-color: rgb(220, 251, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.medicine-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
